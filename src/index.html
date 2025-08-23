@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>1702 25th Street Southeast, Washington, DC 20020</title>
+</head>
+
+<body>
+  <div class="top-0 mb-4 relative">
+    <img src="/images/bg.jpg" alt="Banner Image" class="w-full h-full object-cover">
+
+    <!-- Overlay -->
+    <div class="absolute top-0 left-0 w-full h-full bg-black/40 z-10"></div>
+
+    <!-- Glassy Text Box -->
+    <div class="absolute inset-0 flex items-center justify-center px-4 z-20">
+      <div
+        class="bg-white/20 backdrop-blur-md px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-6 rounded-xl shadow-lg text-center max-w-3xl">
+        <h2 class="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold leading-snug">
+          1702 25th Street Southeast, Washington, DC 20020
+        </h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="bg-transparent backdrop-blur-md shadow-md fixed top-0 left-0 w-full z-50 rounded-3xl">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+
+        <!-- Logo & Address -->
+        <div class="flex gap-4 items-center">
+          <img src="/images/logo.jpg" alt="Logo" class="h-10 w-14 object-cover">
+          <div class="flex flex-col text-sm sm:text-base font-semibold leading-tight">
+            <p>1702 25th Street Southeast,</p>
+            <p>Washington, DC 20020</p>
+          </div>
+        </div>
+
+        <!-- Desktop Menu  -->
+        <div class="hidden md:flex items-center space-x-6 font-semibold">
+          <a href="#photo" class="text-gray-700 hover:text-white">Photo</a>
+          <a href="#video" class="text-gray-700 hover:text-white">Video</a>
+          <a href="#3dtour" class="text-gray-700 hover:text-white">3D Tour</a>
+          <a href="#floorplan" class="text-gray-700 hover:text-white">Floor Plan</a>    
+          <a href="#map" class="block text-gray-700 hover:text-white">Location</a>
+          <a href="#contact" class="block text-gray-700 hover:text-white">Contact</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="text-gray-700 focus:outline-none">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden md:hidden px-4 pb-4 space-y-2 bg-transparent backdrop-blur-md shadow-md">
+      <a href="#photo" class="block text-gray-700 hover:text-white">Photo</a>
+      <a href="#video" class="block text-gray-700 hover:text-white">Video</a>
+      <a href="#3dtour" class="block text-gray-700 hover:text-white">3D Tour</a>
+      <a href="#floorplan" class="block text-gray-700 hover:text-white">Floor Plan</a>
+      <a href="#map" class="block text-gray-700 hover:text-white">Location</a>
+      <a href="#contact" class="block text-gray-700 hover:text-white">Contact</a>
+    </div>
+  </nav>
+
+
+  <!-- Buttons -->
+  <div class="flex flex-col items-center gap-4 py-8">
+    <a href="#photo"
+      class="px-8 sm:px-12 py-2 border border-black font-semibold bg-transparent backdrop-blur-md text-black rounded-2xl text-base sm:text-lg hover:bg-black hover:text-white transition">
+      View All Photos
+    </a>
+  </div>
+
+  <!-- Photos -->
+  <section id="photo" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-black mb-8">PHOTOS</h2>
+      <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4" id="photos-section">
+        <img src="/images/1702 25th Street Southeast, Washington, DC 200202579.jpg-FULL.JPG"
+          class="w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Photo 1">
+        <img src="/images/1702 25th Street Southeast, Washington, DC 200202584.jpg-FULL.JPG"
+          class="w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Photo 2">
+        <img src="/images/1702 25th Street Southeast, Washington, DC 200202595.jpg-FULL.JPG"
+          class="w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Photo 3">
+        <img src="/images/1702 25th Street Southeast, Washington, DC 200202615.jpg-FULL.JPG"
+          class="w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Photo 4">
+        <img src="/images/1702 25th Street Southeast, Washington, DC 200202680.jpg-FULL.JPG"
+          class="w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Photo 5">
+        <img src="/images/1702 25th Street Southeast, Washington, DC 200202685.jpg-FULL.JPG"
+          class="w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Photo 6">
+        <img src="/images/1702 25th Street Southeast, Washington, DC 200202725.jpg-FULL.JPG"
+          class="w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Photo 7">
+        <img src="/images/1702 25th Street Southeast, Washington, DC 200202710.jpg-FULL.JPG"
+          class="w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Photo 8">
+      </div>
+    </div>
+  </section>
+
+  <!-- Videos -->
+  <section id="video" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-black mb-8">VIDEO</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <img src="/images/1702 25th Street Southeast, Washington, DC 200202579.jpg-FULL.JPG"
+          class="w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Video Thumbnail 1">
+        <img src="/images/1702 25th Street Southeast, Washington, DC 200202584.jpg-FULL.JPG"
+          class="w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Video Thumbnail 2">
+        <img src="/images/1702 25th Street Southeast, Washington, DC 200202595.jpg-FULL.JPG"
+          class="w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Video Thumbnail 3">
+        <img src="/images/1702 25th Street Southeast, Washington, DC 200202615.jpg-FULL.JPG"
+          class="w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Video Thumbnail 4">
+      </div>
+    </div>
+  </section>
+
+  <!-- 3D Tour -->
+  <section id="3dtour" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-black mb-8">3D TOUR</h2>
+      <div class="flex justify-center">
+        <img src="/images/1702 25th Street Southeast, Washington, DC 200202579.jpg-FULL.JPG"
+          class="w-full max-w-4xl rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="3D Tour">
+      </div>
+    </div>
+  </section>
+
+  <!-- Floor Plan -->
+  <!-- Floor Plan Section -->
+  <section id="floorplan" class="py-16 bg-gray-50">
+    <div class="flex justify-center items-center min-h-screen">
+      <div class="w-full max-w-6xl p-6">
+
+        <!-- Heading -->
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-10 text-black">
+          FLOOR PLANS
+        </h2>
+
+        <!-- Image Gallery -->
+        <div id="gallery" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <img src="/images/floor1.JPG" alt="Floor 1"
+            class="gallery-img w-full h-auto rounded-lg shadow-md hover:opacity-90 cursor-pointer object-cover">
+          <img src="/images/floor1 (2).JPG" alt="Floor 2"
+            class="gallery-img w-full h-auto rounded-lg shadow-md hover:opacity-90 cursor-pointer object-cover">
+          <img src="/images/floor1 (3).JPG" alt="Floor 3"
+            class="gallery-img w-full h-auto rounded-lg shadow-md hover:opacity-90 cursor-pointer object-cover">
+          <img src="/images/floor1 (4).JPG" alt="Floor 4"
+            class="gallery-img w-full h-auto rounded-lg shadow-md hover:opacity-90 cursor-pointer object-cover">
+          <img src="/images/floor1 (5).JPG" alt="Floor 5"
+            class="gallery-img w-full h-auto rounded-lg shadow-md hover:opacity-90 cursor-pointer object-cover">
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="fixed inset-0 bg-black bg-opacity-80 hidden flex-col items-center justify-center z-50 p-4">
+
+      <!-- Close Button -->
+      <button id="closePopup" class="absolute top-4 right-6 text-white text-3xl font-bold hover:text-red-400">
+        ✕
+      </button>
+
+      <!-- Zoom Controls -->
+      <div class="absolute top-16 right-6 flex gap-3">
+        <button id="zoomOut"
+          class="w-10 h-10 rounded-full bg-white text-black text-2xl flex items-center justify-center hover:bg-gray-200">
+          -
+        </button>
+        <button id="zoomIn"
+          class="w-10 h-10 rounded-full bg-white text-black text-2xl flex items-center justify-center hover:bg-gray-200">
+          +
+        </button>
+      </div>
+
+      <!-- Image Section -->
+      <div class="flex items-center justify-center w-full h-full px-4 sm:px-8">
+        <!-- Prev Button -->
+        <button id="prev" class="text-white text-4xl sm:text-5xl font-bold px-2 sm:px-6 hover:text-gray-300">
+          ⟨
+        </button>
+
+        <!-- Popup Image -->
+        <img id="popupImage" src="" alt="Popup Image"
+          class="max-h-[75vh] sm:max-h-[85vh] max-w-full transition-transform duration-300 rounded-lg shadow-lg object-contain"
+          style="transform: scale(0.5);">
+
+        <!-- Next Button -->
+        <button id="next" class="text-white text-4xl sm:text-5xl font-bold px-2 sm:px-6 hover:text-gray-300">
+          ⟩
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Google Map Section -->
+  <section id="map" class="py-16 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-bold text-center mb-10 text-black">LOCATION</h2>
+      <div class="w-full h-[450px] rounded-xl overflow-hidden shadow-lg">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.073309939839!2d-77.00372198464766!3d38.86839197957383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b8f0639f03ef%3A0x3a9e546b2ef2b4f5!2s1702%2025th%20St%20SE%2C%20Washington%2C%20DC%2020020%2C%20USA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Contact Form -->
+  <div class="flex justify-center items-center py-16 px-4" id="contact">
+    <form class="bg-white p-8 rounded-lg shadow-md w-full max-w-md flex flex-col gap-6">
+      <h2 class="text-2xl font-bold text-center text-black">CONTACT</h2>
+      <input type="text" placeholder="Name"
+        class="border border-blue-900 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      <input type="email" placeholder="Email Address"
+        class="border border-blue-900 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      <textarea placeholder="Message" rows="4"
+        class="border border-blue-900 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      <button type="submit" class="bg-black text-white py-3 rounded-lg hover:bg-gray-800 transition font-semibold">
+        SEND
+      </button>
+    </form>
+  </div>
+
+
+  <!-- footer -->
+
+  <p class="w-full py-3 text-center text-xs text-black dark:text-black border-t">
+    © <span id="year"></span> R/E Pro Photos — All rights reserved.
+  </p>
+  <script>
+    // Toggle mobile menu
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+
+    const images = [
+      "/images/floor1.jpg",
+      "/images/floor1 (2).JPG",
+      "/images/floor1 (3).JPG",
+      "/images/floor1 (4).JPG",
+      "/images/floor1 (5).JPG",
+    ];
+
+    const popup = document.getElementById("popup");
+    const popupImage = document.getElementById("popupImage");
+    let currentIndex = 0;
+    let scale = 0.5;
+
+    // Open popup on image click
+    document.querySelectorAll(".gallery-img").forEach((img, index) => {
+      img.addEventListener("click", () => {
+        currentIndex = index;
+        popup.classList.remove("hidden");
+        showImage();
+      });
+    });
+
+    // Show image in popup
+    function showImage() {
+      popupImage.src = images[currentIndex];
+      scale = 1;
+      popupImage.style.transform = `scale(${scale})`;
+    }
+
+    // Close popup
+    document.getElementById("closePopup").addEventListener("click", () => {
+      popup.classList.add("hidden");
+    });
+
+    // Next & Prev
+    document.getElementById("next").addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      showImage();
+    });
+    document.getElementById("prev").addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      showImage();
+    });
+
+    // Zoom Controls (limit scale 0.5 - 2)
+    document.getElementById("zoomIn").addEventListener("click", () => {
+      if (scale < 2) {
+        scale += 0.1;
+        popupImage.style.transform = `scale(${scale})`;
+      }
+    });
+    document.getElementById("zoomOut").addEventListener("click", () => {
+      if (scale > 0.5) {
+        scale -= 0.1;
+        popupImage.style.transform = `scale(${scale})`;
+      }
+    });
+
+    // footer
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+  </script>
+</body>
+
+</html>
