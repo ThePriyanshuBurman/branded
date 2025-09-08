@@ -16,7 +16,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
     integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link rel="icon" type="image/png" href="/images/REPRO-Icon-57.png" />
+  <!-- <link rel="icon" type="image/png" href="/images/REPRO-Icon-57.png" /> -->
   <title>1702 25th Street Southeast, Washington, DC 20020</title>
 </head>
 
@@ -45,7 +45,7 @@
 
         <!-- Logo & Address -->
         <div class="flex gap-4 items-center">
-          <img src="/images/REPRO-HQ Logo-324-200.png" alt="Logo" class="h-10 w-14 object-cover">
+          <!-- <img src="/images/REPRO-HQ Logo-324-200.png" alt="Logo" class="h-10 w-14 object-cover"> -->
           <div class="flex flex-col text-sm sm:text-base font-semibold leading-tight">
             <p>1702 25th Street Southeast,</p>
             <p>Washington, DC 20020</p>
@@ -93,6 +93,43 @@
     </a>
   </div> -->
 
+  <!-- Property Info Section -->
+  <div
+    class="w-full px-6 py-4 bg-gray-50 border-b border-gray-200 flex items-center justify-around text-gray-700 text-sm md:text-base">
+    <!-- Bedrooms -->
+    <div class="flex items-center gap-2">
+      <!-- Bed Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-500" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M3 10h18M4 6h16a1 1 0 011 1v8H3V7a1 1 0 011-1zM21 16H3v4h18v-4z" />
+      </svg>
+      <span class="font-medium">3 Bedrooms</span>
+    </div>
+
+    <!-- Bathrooms -->
+    <div class="flex items-center gap-2">
+      <!-- Bath Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-500" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 13h16v8H4v-8zM4 9h16V7a1 1 0 00-1-1h-5V3h-4v3H5a1 1 0 00-1 1v2z" />
+      </svg>
+      <span class="font-medium">2 Bathrooms</span>
+    </div>
+
+    <!-- Area -->
+    <div class="flex items-center gap-2">
+      <!-- Ruler Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-500" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12h18M12 3v18" />
+      </svg>
+      <span class="font-medium">1450 sq.ft</span>
+    </div>
+  </div>
+
+  <!-- Agent info -->
 
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24">
     <div
@@ -136,254 +173,534 @@
 
 
     </div>
+
+
     <!-- Photos -->
     <section id="photo" class="py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold text-center text-black mb-8">PHOTOS</h2>
-        <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4" id="photos-section">
-          <img src="/images/1702 25th Street Southeast, Washington, DC 200202579.jpg-FULL.JPG"
-            class="photo-gallery w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Photo 1">
-          <img src="/images/1702 25th Street Southeast, Washington, DC 200202584.jpg-FULL.JPG"
-            class="photo-gallery w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Photo 2">
-          <img src="/images/1702 25th Street Southeast, Washington, DC 200202595.jpg-FULL.JPG"
-            class="photo-gallery w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Photo 3">
-          <img src="/images/1702 25th Street Southeast, Washington, DC 200202615.jpg-FULL.JPG"
-            class="photo-gallery w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Photo 4">
-          <img src="/images/1702 25th Street Southeast, Washington, DC 200202680.jpg-FULL.JPG"
-            class="photo-gallery w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Photo 5">
-          <img src="/images/1702 25th Street Southeast, Washington, DC 200202685.jpg-FULL.JPG"
-            class="photo-gallery w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Photo 6">
-          <img src="/images/1702 25th Street Southeast, Washington, DC 200202725.jpg-FULL.JPG"
-            class="photo-gallery w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Photo 7">
-          <img src="/images/1702 25th Street Southeast, Washington, DC 200202710.jpg-FULL.JPG"
-            class="photo-gallery w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Photo 8">
+
+        <!-- Grid thumbnails -->
+        <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="photos-grid">
+          <!-- NOTE: keep filenames same as your actual images -->
+          <img data-index="0" src="/images/1702 25th Street Southeast, Washington, DC 200202579.jpg-FULL.JPG"
+            class="thumb w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer object-cover h-48" alt="Photo 1">
+          <img data-index="1" src="/images/1702 25th Street Southeast, Washington, DC 200202584.jpg-FULL.JPG"
+            class="thumb w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer object-cover h-48" alt="Photo 2">
+          <img data-index="2" src="/images/1702 25th Street Southeast, Washington, DC 200202595.jpg-FULL.JPG"
+            class="thumb w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer object-cover h-48" alt="Photo 3">
+          <img data-index="3" src="/images/1702 25th Street Southeast, Washington, DC 200202615.jpg-FULL.JPG"
+            class="thumb w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer object-cover h-48" alt="Photo 4">
+          <img data-index="4" src="/images/1702 25th Street Southeast, Washington, DC 200202680.jpg-FULL.JPG"
+            class="thumb w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer object-cover h-48" alt="Photo 5">
+          <img data-index="5" src="/images/1702 25th Street Southeast, Washington, DC 200202685.jpg-FULL.JPG"
+            class="thumb w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer object-cover h-48" alt="Photo 6">
+          <img data-index="6" src="/images/1702 25th Street Southeast, Washington, DC 200202725.jpg-FULL.JPG"
+            class="thumb w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer object-cover h-48" alt="Photo 7">
+          <img data-index="7" src="/images/1702 25th Street Southeast, Washington, DC 200202710.jpg-FULL.JPG"
+            class="thumb w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer object-cover h-48" alt="Photo 8">
         </div>
       </div>
 
       <!-- Popup Modal -->
       <div id="photopopup" class="fixed inset-0 z-[9999] hidden grid place-items-center bg-black/80 p-4">
+        <button id="photoclosePopup" class="absolute top-4 right-4 text-white text-3xl leading-none focus:outline-none"
+          aria-label="Close">×</button>
 
-        <!-- Close Button -->
-        <button id="photoclosePopup" class="absolute top-4 right-4 text-white text-3xl leading-none">×</button>
+        <div class="w-full max-w-6xl pointer-events-auto relative">
+          <!-- Prev / Next -->
+          <div class="absolute left-4 top-1/2 transform -translate-y-1/2 z-20">
+            <button id="photoPrev"
+              class="w-12 h-12 rounded-full bg-white/20 text-white flex items-center justify-center">‹</button>
+          </div>
+          <div class="absolute right-4 top-1/2 transform -translate-y-1/2 z-20">
+            <button id="photoNext"
+              class="w-12 h-12 rounded-full bg-white/20 text-white flex items-center justify-center">›</button>
+          </div>
 
-        <!-- Zoom Controls -->
-        <!-- <div class="absolute top-16 right-6 flex gap-3"> -->
-        <!-- <button id="photozoomOut" -->
-        <!-- class="w-10 h-10 rounded-full bg-white text-black text-2xl flex items-center justify-center hover:bg-gray-200">-</button> -->
-        <!-- <button id="photozoomIn" -->
-        <!-- class="w-10 h-10 rounded-full bg-white text-black text-2xl flex items-center justify-center hover:bg-gray-200">+</button> -->
-        <!-- </div> -->
+          <!-- Top controls -->
+          <div class="absolute left-1/2 transform -translate-x-1/2 top-6 z-20 flex gap-3 items-center">
+            <button id="photoPlayPause"
+              class="flex items-center gap-1 px-3 py-1 rounded-full bg-white/10 text-white"><span
+                id="photoPpIcon">▶</span><span id="photoPpLabel" class="text-sm">Play</span></button>
+            <button id="photoZoomIn" class="w-9 h-9 rounded-full bg-white/10 text-white">＋</button>
+            <button id="photoZoomOut" class="w-9 h-9 rounded-full bg-white/10 text-white">－</button>
+            <button id="photoFullscreen" class="w-9 h-9 rounded-full bg-white/10 text-white">⛶</button>
+          </div>
 
-        <!-- Slick Gallery -->
-        <div class="w-full max-w-6xl pointer-events-auto">
-          <div class="photos-gallery">
-            <div><img src="/images/1702 25th Street Southeast, Washington, DC 200202579.jpg-FULL.JPG"
-                class="block mx-auto max-w-full max-h-[85vh] w-auto object-contain" alt="Photo 1"></div>
-            <div><img src="/images/1702 25th Street Southeast, Washington, DC 200202584.jpg-FULL.JPG"
-                class="block mx-auto max-w-full max-h-[85vh] w-auto object-contain" alt="Photo 2"></div>
-            <div><img src="/images/1702 25th Street Southeast, Washington, DC 200202595.jpg-FULL.JPG"
-                class="block mx-auto max-w-full max-h-[85vh] w-auto object-contain" alt="Photo 3"></div>
-            <div><img src="/images/1702 25th Street Southeast, Washington, DC 200202615.jpg-FULL.JPG"
-                class="block mx-auto max-w-full max-h-[85vh] w-auto object-contain" alt="Photo 4"></div>
-            <div><img src="/images/1702 25th Street Southeast, Washington, DC 200202680.jpg-FULL.JPG"
-                class="block mx-auto max-w-full max-h-[85vh] w-auto object-contain" alt="Photo 5"></div>
-            <div><img src="/images/1702 25th Street Southeast, Washington, DC 200202685.jpg-FULL.JPG"
-                class="block mx-auto max-w-full max-h-[85vh] w-auto object-contain" alt="Photo 6"></div>
-            <div><img src="/images/1702 25th Street Southeast, Washington, DC 200202725.jpg-FULL.JPG"
-                class="block mx-auto max-w-full max-h-[85vh] w-auto object-contain" alt="Photo 7"></div>
+          <!-- Slides container (important) -->
+          <div id="photo-slides" class="bg-transparent rounded-lg overflow-hidden">
+            <!-- slides injected by JS -->
+          </div>
+
+          <!-- caption + counter -->
+          <div class="mt-4 flex items-center justify-between text-sm text-white/90">
+            <div id="photo-caption" class="truncate max-w-[70%]"></div>
+            <div id="photo-counter" class="opacity-90"></div>
           </div>
         </div>
       </div>
-    </section>
+  </div>
+  </section>
 
 
-    <!-- Videos -->
-    <section id="video" class="py-16">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-center text-black mb-8">VIDEO</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          <img src="/images/1702 25th Street Southeast, Washington, DC 200202579.jpg-FULL.JPG"
-            class="w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Video Thumbnail 1">
-          <img src="/images/1702 25th Street Southeast, Washington, DC 200202584.jpg-FULL.JPG"
-            class="w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Video Thumbnail 2">
-          <img src="/images/1702 25th Street Southeast, Washington, DC 200202595.jpg-FULL.JPG"
-            class="w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Video Thumbnail 3">
-          <img src="/images/1702 25th Street Southeast, Washington, DC 200202615.jpg-FULL.JPG"
-            class="w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Video Thumbnail 4">
-        </div>
+
+  <!-- Videos -->
+  <section id="video" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-black mb-8">VIDEO</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <img src="/images/1702 25th Street Southeast, Washington, DC 200202579.jpg-FULL.JPG"
+          class="w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Video Thumbnail 1">
+        <img src="/images/1702 25th Street Southeast, Washington, DC 200202584.jpg-FULL.JPG"
+          class="w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Video Thumbnail 2">
+        <img src="/images/1702 25th Street Southeast, Washington, DC 200202595.jpg-FULL.JPG"
+          class="w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Video Thumbnail 3">
+        <img src="/images/1702 25th Street Southeast, Washington, DC 200202615.jpg-FULL.JPG"
+          class="w-full rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="Video Thumbnail 4">
       </div>
-    </section>
-
-    <!-- 3D Tour -->
-    <section id="3dtour" class="py-16">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-center text-black mb-8">3D TOUR</h2>
-        <div class="flex justify-center">
-          <img src="/images/1702 25th Street Southeast, Washington, DC 200202579.jpg-FULL.JPG"
-            class="w-full max-w-4xl rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="3D Tour">
-        </div>
-      </div>
-    </section>
-
-    <!-- Floor Plan -->
-    <section id="floorplan" class="py-16 bg-gray-50">
-      <div class="flex justify-center items-center min-h-screen">
-        <div class="w-full max-w-6xl p-6">
-
-          <!-- Heading -->
-          <h2 class="text-3xl sm:text-4xl font-bold text-center mb-10 text-black">
-            FLOOR PLANS
-          </h2>
-
-          <!-- Image Gallery -->
-          <div id="gallery" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
-            <img src="/images/floor1.JPG" alt="Floor 1"
-              class="gallery-img w-full h-auto rounded-lg shadow-md hover:opacity-90 cursor-pointer object-cover">
-            <img src="/images/floor1 (2).JPG" alt="Floor 2"
-              class="gallery-img w-full h-auto rounded-lg shadow-md hover:opacity-90 cursor-pointer object-cover">
-            <img src="/images/floor1 (3).JPG" alt="Floor 3"
-              class="gallery-img w-full h-auto rounded-lg shadow-md hover:opacity-90 cursor-pointer object-cover">
-            <img src="/images/floor1 (4).JPG" alt="Floor 4"
-              class="gallery-img w-full h-auto rounded-lg shadow-md hover:opacity-90 cursor-pointer object-cover">
-            <img src="/images/floor1 (5).JPG" alt="Floor 5"
-              class="gallery-img w-full h-auto rounded-lg shadow-md hover:opacity-90 cursor-pointer object-cover">
-          </div>
-        </div>
-      </div>
-
-      <!-- Popup Modal -->
-      <div id="popup" class="fixed inset-0 z-[9999] hidden grid place-items-center bg-black/80 p-4">
-
-        <!-- close -->
-        <button id="closePopup" class="absolute top-4 right-4 text-white text-3xl leading-none">×</button>
-
-        <!-- Zoom Controls -->
-        <div class="absolute top-16 right-6 flex gap-3">
-          <button id="zoomOut"
-            class="w-10 h-10 rounded-full bg-white text-black text-2xl flex items-center justify-center hover:bg-gray-200">-</button>
-          <button id="zoomIn"
-            class="w-10 h-10 rounded-full bg-white text-black text-2xl flex items-center justify-center hover:bg-gray-200">+</button>
-        </div>
-
-        <!-- Slick Gallery -->
-        <div class="w-full max-w-6xl pointer-events-auto">
-          <div class="floor-plan-gallery">
-            <div><img src="/images/floor1.JPG" alt="Floor 1"
-                class="block mx-auto max-w-full max-h-[85vh] w-auto object-contain"></div>
-            <div><img src="/images/floor1 (2).JPG" alt="Floor 2"
-                class="block mx-auto max-w-full max-h-[85vh] w-auto object-contain"></div>
-            <div><img src="/images/floor1 (3).JPG" alt="Floor 3"
-                class="block mx-auto max-w-full max-h-[85vh] w-auto object-contain"></div>
-            <div><img src="/images/floor1 (4).JPG" alt="Floor 4"
-                class="block mx-auto max-w-full max-h-[85vh] w-auto object-contain"></div>
-            <div><img src="/images/floor1 (5).JPG" alt="Floor 5"
-                class="block mx-auto max-w-full max-h-[85vh] w-auto object-contain"></div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-
-    <!-- Google Map Section -->
-    <section id="map" class="py-16 bg-gray-100">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-10 text-black">LOCATION</h2>
-        <div class="w-full h-[450px] rounded-xl overflow-hidden shadow-lg">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.073309939839!2d-77.00372198464766!3d38.86839197957383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b8f0639f03ef%3A0x3a9e546b2ef2b4f5!2s1702%2025th%20St%20SE%2C%20Washington%2C%20DC%2020020%2C%20USA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
-            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
-      </div>
-    </section>
-
-
-
-    <!-- Contact Form -->
-    <div class="flex justify-center items-center py-16 px-4" id="contact">
-      <form class="bg-white p-8 rounded-lg shadow-md w-full max-w-md flex flex-col gap-6">
-        <h2 class="text-2xl font-bold text-center text-black">CONTACT</h2>
-        <input type="text" placeholder="Name"
-          class="border border-blue-900 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
-        <input type="email" placeholder="Email Address"
-          class="border border-blue-900 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
-        <textarea placeholder="Message" rows="4"
-          class="border border-blue-900 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-        <button type="submit" class="bg-black text-white py-3 rounded-lg hover:bg-gray-800 transition font-semibold">
-          SEND
-        </button>
-      </form>
     </div>
 
+    <div id="videopopup" class="fixed inset-0 z-[9999] hidden grid place-items-center bg-black/80 p-4">
+      <button id="videoclosePopup" class="absolute top-4 right-4 text-white text-3xl leading-none">×</button>
 
-    <!-- footer -->
+      <div class="w-full max-w-6xl pointer-events-auto relative">
+        <div class="absolute left-4 top-1/2 transform -translate-y-1/2 z-20">
+          <button id="videoPrev"
+            class="w-12 h-12 rounded-full bg-white/20 text-white flex items-center justify-center">‹</button>
+        </div>
+        <div class="absolute right-4 top-1/2 transform -translate-y-1/2 z-20">
+          <button id="videoNext"
+            class="w-12 h-12 rounded-full bg-white/20 text-white flex items-center justify-center">›</button>
+        </div>
 
-    <p class="w-full py-3 text-center text-xs text-black dark:text-black border-t">
-      © <span id="year"></span> R/E Pro Photos — All rights reserved.
-    </p>
+        <div class="absolute left-1/2 transform -translate-x-1/2 top-6 z-20 flex gap-3 items-center">
+          <button id="videoPlayPause"
+            class="flex items-center gap-1 px-3 py-1 rounded-full bg-white/10 text-white"><span
+              id="videoPpIcon">▶</span><span id="videoPpLabel" class="text-sm">Play</span></button>
+          <button id="videoZoomIn" class="w-9 h-9 rounded-full bg-white/10 text-white">＋</button>
+          <button id="videoZoomOut" class="w-9 h-9 rounded-full bg-white/10 text-white">－</button>
+          <button id="videoFullscreen" class="w-9 h-9 rounded-full bg-white/10 text-white">⛶</button>
+        </div>
+
+        <div id="video-slides" class="bg-transparent rounded-lg overflow-hidden"></div>
+
+        <div class="mt-4 flex items-center justify-between text-sm text-white/90">
+          <div id="video-caption" class="truncate max-w-[70%]"></div>
+          <div id="video-counter" class="opacity-90"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3D Tour -->
+  <section id="3dtour" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-black mb-8">3D TOUR</h2>
+      <div class="flex justify-center">
+        <img src="/images/1702 25th Street Southeast, Washington, DC 200202579.jpg-FULL.JPG"
+          class="w-full max-w-4xl rounded-lg shadow-md hover:opacity-90 cursor-pointer" alt="3D Tour">
+      </div>
+    </div>
+  </section>
+
+  <!-- Floor Plan -->
+  <section id="floorplan" class="py-16 bg-gray-50">
+    <div class="flex justify-center items-center min-h-screen">
+      <div class="w-full max-w-6xl p-6">
+
+        <!-- Heading -->
+        <h2 class="text-3xl sm:text-4xl font-bold text-center mb-10 text-black">
+          FLOOR PLANS
+        </h2>
+
+        <!-- Image Gallery -->
+        <div id="gallery" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <img src="/images/floor1.JPG" alt="Floor 1"
+            class="gallery-img w-full h-auto rounded-lg shadow-md hover:opacity-90 cursor-pointer object-cover">
+          <img src="/images/floor1 (2).JPG" alt="Floor 2"
+            class="gallery-img w-full h-auto rounded-lg shadow-md hover:opacity-90 cursor-pointer object-cover">
+          <img src="/images/floor1 (3).JPG" alt="Floor 3"
+            class="gallery-img w-full h-auto rounded-lg shadow-md hover:opacity-90 cursor-pointer object-cover">
+          <img src="/images/floor1 (4).JPG" alt="Floor 4"
+            class="gallery-img w-full h-auto rounded-lg shadow-md hover:opacity-90 cursor-pointer object-cover">
+          <img src="/images/floor1 (5).JPG" alt="Floor 5"
+            class="gallery-img w-full h-auto rounded-lg shadow-md hover:opacity-90 cursor-pointer object-cover">
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="floorpopup" class="fixed inset-0 z-[9999] hidden grid place-items-center bg-black/80 p-4">
+      <button id="floorclosePopup" class="absolute top-4 right-4 text-white text-3xl leading-none">×</button>
+
+      <div class="w-full max-w-6xl pointer-events-auto relative">
+        <div class="absolute left-4 top-1/2 transform -translate-y-1/2 z-20">
+          <button id="floorPrev"
+            class="w-12 h-12 rounded-full bg-white/20 text-white flex items-center justify-center">‹</button>
+        </div>
+        <div class="absolute right-4 top-1/2 transform -translate-y-1/2 z-20">
+          <button id="floorNext"
+            class="w-12 h-12 rounded-full bg-white/20 text-white flex items-center justify-center">›</button>
+        </div>
+
+        <div class="absolute left-1/2 transform -translate-x-1/2 top-6 z-20 flex gap-3 items-center">
+          <button id="floorPlayPause"
+            class="flex items-center gap-1 px-3 py-1 rounded-full bg-white/10 text-white"><span
+              id="floorPpIcon">▶</span><span id="floorPpLabel" class="text-sm">Play</span></button>
+          <button id="floorZoomIn" class="w-9 h-9 rounded-full bg-white/10 text-white">＋</button>
+          <button id="floorZoomOut" class="w-9 h-9 rounded-full bg-white/10 text-white">－</button>
+          <button id="floorFullscreen" class="w-9 h-9 rounded-full bg-white/10 text-white">⛶</button>
+        </div>
+
+        <div id="floor-slides" class="bg-transparent rounded-lg overflow-hidden"></div>
+
+        <div class="mt-4 flex items-center justify-between text-sm text-white/90">
+          <div id="floor-caption" class="truncate max-w-[70%]"></div>
+          <div id="floor-counter" class="opacity-90"></div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
 
 
-    <script>
+  <!-- Google Map Section -->
+  <section id="map" class="py-16 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-bold text-center mb-10 text-black">LOCATION</h2>
+      <div class="w-full h-[450px] rounded-xl overflow-hidden shadow-lg">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.073309939839!2d-77.00372198464766!3d38.86839197957383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b8f0639f03ef%3A0x3a9e546b2ef2b4f5!2s1702%2025th%20St%20SE%2C%20Washington%2C%20DC%2020020%2C%20USA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
 
-      // Toggle mobile menu
-      const btn = document.getElementById('menu-btn');
-      const menu = document.getElementById('menu');
 
-      btn.addEventListener('click', () => {
-        menu.classList.toggle('hidden');
-      });
 
-      //photo popup
-      $('.photos-gallery').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear'
-      });
+  <!-- Contact Form -->
+  <div class="flex justify-center items-center py-16 px-4" id="contact">
+    <form class="bg-white p-8 rounded-lg shadow-md w-full max-w-md flex flex-col gap-6">
+      <h2 class="text-2xl font-bold text-center text-black">CONTACT</h2>
+      <input type="text" placeholder="Name"
+        class="border border-blue-900 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      <input type="email" placeholder="Email Address"
+        class="border border-blue-900 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      <textarea placeholder="Message" rows="4"
+        class="border border-blue-900 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      <button type="submit" class="bg-black text-white py-3 rounded-lg hover:bg-gray-800 transition font-semibold">
+        SEND
+      </button>
+    </form>
+  </div>
 
-      // Open popup when gallery image is clicked
-      document.querySelectorAll('.photo-gallery').forEach((img, index) => {
-        img.addEventListener('click', () => {
-          document.getElementById('photopopup').classList.remove('hidden');
-          $('.photos-gallery').slick('slickGoTo', index); // Start from clicked image
+
+  <!-- footer -->
+
+  <p class="w-full py-3 text-center text-xs text-black dark:text-black border-t">
+    © <span id="year"></span> R/E Pro Photos — All rights reserved.
+  </p>
+
+
+  <script>
+
+    // Toggle mobile menu
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+
+    // footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+
+
+    (function () {
+      // Shared config
+      const AUTOPLAY_INTERVAL = 3000;
+      const ZOOM_STEP = 0.25;
+      const ZOOM_MAX = 3;
+      const ZOOM_MIN = 1;
+
+      // A small helper to build a gallery controller for a given gallery
+      function createGalleryController(options) {
+        const {
+          thumbSelector,                 // CSS selector for the thumbnails of this gallery
+          modalIdPrefix,                 // "photo" | "video" | "floor"
+          initialSlides = null           // optional list of src strings (if thumbs absent)
+        } = options;
+
+        // DOM refs (safe)
+        const thumbs = Array.from(document.querySelectorAll(thumbSelector));
+        const popup = document.getElementById(modalIdPrefix + 'popup');
+        if (!popup) return null;
+
+        const slidesContainer = document.getElementById(modalIdPrefix + '-slides');
+        const closeBtn = document.getElementById(modalIdPrefix + 'closePopup') || document.getElementById(modalIdPrefix + 'close');
+        const prevBtn = document.getElementById(modalIdPrefix + 'Prev');
+        const nextBtn = document.getElementById(modalIdPrefix + 'Next');
+        const playPauseBtn = document.getElementById(modalIdPrefix + 'PlayPause');
+        const ppIcon = document.getElementById(modalIdPrefix + 'PpIcon');
+        const ppLabel = document.getElementById(modalIdPrefix + 'PpLabel');
+        const caption = document.getElementById(modalIdPrefix + '-caption');
+        const counter = document.getElementById(modalIdPrefix + '-counter');
+        const zoomInBtn = document.getElementById(modalIdPrefix + 'ZoomIn');
+        const zoomOutBtn = document.getElementById(modalIdPrefix + 'ZoomOut');
+        const fsBtn = document.getElementById(modalIdPrefix + 'Fullscreen');
+
+        // state
+        const images = (thumbs.length ? thumbs.map(t => t.getAttribute('src')) : (initialSlides || []));
+        let current = 0, autoplayId = null, isPlaying = false, touchStartX = 0;
+        let zoomScale = 1, isDragging = false, dragStartX = 0, dragStartY = 0, imgOffsetX = 0, imgOffsetY = 0, lastTapTime = 0;
+        let activeImgPointerDown = false;
+
+        if (!slidesContainer) {
+          console.warn('slidesContainer missing for', modalIdPrefix);
+          return null;
+        }
+
+        // build slides
+        function buildSlides() {
+          slidesContainer.innerHTML = '';
+          images.forEach((src, i) => {
+            const wrap = document.createElement('div');
+            wrap.className = 'slide hidden w-full flex items-center justify-center';
+            wrap.setAttribute('data-index', i);
+
+            // For videos, check extension and embed <video> tag if it is mp4 or webm; else fallback to img
+            const isVideo = /\.(mp4|webm|ogg)(\?.*)?$/i.test(src);
+            if (isVideo) {
+              const v = document.createElement('video');
+              v.src = src;
+              v.controls = true;
+              v.className = 'block mx-auto w-auto max-w-full max-h-[85vh] object-contain rounded-lg';
+              wrap.appendChild(v);
+            } else {
+              const img = document.createElement('img');
+              img.src = src;
+              img.alt = `Slide ${i + 1}`;
+              img.className = 'gallery-image block mx-auto w-auto max-w-full max-h-[85vh] object-contain rounded-lg touch-none';
+              img.draggable = false;
+              wrap.appendChild(img);
+            }
+            slidesContainer.appendChild(wrap);
+          });
+        }
+
+        function getActiveSlide() { return slidesContainer.querySelector('.slide:not(.hidden)'); }
+        function getActiveMedia() {
+          const s = getActiveSlide();
+          return s ? (s.querySelector('img') || s.querySelector('video')) : null;
+        }
+
+        function applyTransformToActive() {
+          const media = getActiveMedia();
+          if (!media) return;
+          if (media.tagName === 'IMG') {
+            media.style.transform = `translate(${imgOffsetX}px, ${imgOffsetY}px) scale(${zoomScale})`;
+            media.style.transition = 'transform 0.05s ease-out';
+            media.style.cursor = zoomScale > 1 ? 'grab' : 'auto';
+            media.style.touchAction = zoomScale > 1 ? 'none' : 'pan-y';
+          } else {
+            // for video, we don't scale video (to avoid control issues) — but we could
+          }
+        }
+
+        function resetZoom() {
+          zoomScale = 1; imgOffsetX = 0; imgOffsetY = 0;
+          const media = getActiveMedia();
+          if (media && media.tagName === 'IMG') {
+            media.style.transform = '';
+            media.style.cursor = '';
+            media.style.transition = '';
+            media.style.touchAction = '';
+          }
+        }
+
+        function showSlide(index) {
+          if (images.length === 0) return;
+          index = ((index % images.length) + images.length) % images.length;
+          current = index;
+          resetZoom();
+          const slides = slidesContainer.querySelectorAll('.slide');
+          slides.forEach(s => s.classList.add('hidden'));
+          const active = slidesContainer.querySelector(`.slide[data-index="${index}"]`);
+          if (active) active.classList.remove('hidden');
+
+          const src = images[index];
+          const fileName = src ? src.split('/').pop() : `Slide ${index + 1}`;
+          if (caption) caption.textContent = fileName;
+          if (counter) counter.textContent = `${index + 1} / ${images.length}`;
+          thumbs.forEach(t => t.classList.remove('ring-4', 'ring-white', 'ring-offset-2'));
+          const thumb = thumbs[index];
+          if (thumb) thumb.classList.add('ring-4', 'ring-white', 'ring-offset-2');
+        }
+
+        function openPopup(index) {
+          buildSlides();
+          showSlide(index || 0);
+          popup.classList.remove('hidden');
+          document.documentElement.style.overflow = 'hidden';
+          attachImageEventListeners();
+        }
+        function closePopup() {
+          popup.classList.add('hidden');
+          stopAutoplay();
+          document.documentElement.style.overflow = '';
+          detachImageEventListeners();
+        }
+
+        function next() { showSlide(current + 1); }
+        function prev() { showSlide(current - 1); }
+
+        function startAutoplay() {
+          if (isPlaying || images.length <= 1) return;
+          isPlaying = true;
+          if (ppIcon) ppIcon.textContent = '⏸';
+          if (ppLabel) ppLabel.textContent = 'Pause';
+          autoplayId = setInterval(() => next(), AUTOPLAY_INTERVAL);
+        }
+        function stopAutoplay() {
+          if (!isPlaying) return;
+          isPlaying = false;
+          if (ppIcon) ppIcon.textContent = '▶';
+          if (ppLabel) ppLabel.textContent = 'Play';
+          clearInterval(autoplayId); autoplayId = null;
+        }
+        function toggleAutoplay() { if (isPlaying) stopAutoplay(); else startAutoplay(); }
+        function restartAutoplay() { stopAutoplay(); startAutoplay(); }
+
+        // Attach thumbnail click to open
+        thumbs.forEach((t, i) => {
+          t.addEventListener('click', () => openPopup(i));
+          t.setAttribute('tabindex', '0');
+          t.addEventListener('keydown', ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); t.click(); } });
         });
-      });
 
-      // Close popup
-      document.getElementById('photoclosePopup').addEventListener('click', () => {
-        document.getElementById('photopopup').classList.add('hidden');
-      });
+        closeBtn?.addEventListener('click', closePopup);
+        prevBtn?.addEventListener('click', () => { prev(); if (isPlaying) restartAutoplay(); });
+        nextBtn?.addEventListener('click', () => { next(); if (isPlaying) restartAutoplay(); });
+        playPauseBtn?.addEventListener('click', toggleAutoplay);
 
-      // Slick initialization
-      $('.floor-plan-gallery').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear'
-      });
+        zoomInBtn?.addEventListener('click', () => { zoomScale = Math.min(zoomScale + ZOOM_STEP, ZOOM_MAX); applyTransformToActive(); });
+        zoomOutBtn?.addEventListener('click', () => { zoomScale = Math.max(zoomScale - ZOOM_STEP, ZOOM_MIN); if (zoomScale === 1) { imgOffsetX = 0; imgOffsetY = 0; } applyTransformToActive(); });
 
-      // Open popup when gallery image is clicked
-      document.querySelectorAll('.gallery-img').forEach((img, index) => {
-        img.addEventListener('click', () => {
-          document.getElementById('popup').classList.remove('hidden');
-          $('.floor-plan-gallery').slick('slickGoTo', index); // Start from clicked image
+        fsBtn?.addEventListener('click', async () => {
+          try { if (!document.fullscreenElement) await popup.requestFullscreen(); else await document.exitFullscreen(); } catch (err) { console.warn(err); }
         });
-      });
 
-      // Close popup
-      document.getElementById('closePopup').addEventListener('click', () => {
-        document.getElementById('popup').classList.add('hidden');
-      });
+        popup.addEventListener('click', (e) => { if (e.target === popup) closePopup(); });
+
+        document.addEventListener('keydown', (e) => {
+          if (popup.classList.contains('hidden')) return;
+          if (e.key === 'ArrowRight') { next(); if (isPlaying) restartAutoplay(); }
+          if (e.key === 'ArrowLeft') { prev(); if (isPlaying) restartAutoplay(); }
+          if (e.key === 'Escape') closePopup();
+        });
+
+        slidesContainer.addEventListener('touchstart', (e) => { if (zoomScale > 1) return; touchStartX = e.changedTouches[0].clientX; });
+        slidesContainer.addEventListener('touchend', (e) => {
+          if (zoomScale > 1) return;
+          const touchEndX = e.changedTouches[0].clientX; const dx = touchEndX - touchStartX;
+          if (Math.abs(dx) > 40) { if (dx < 0) next(); else prev(); if (isPlaying) restartAutoplay(); }
+        });
+
+        // Pointer / drag / double-click handlers
+        function attachImageEventListeners() {
+          slidesContainer.addEventListener('pointerdown', onPointerDown);
+          slidesContainer.addEventListener('pointermove', onPointerMove);
+          window.addEventListener('pointerup', onPointerUp);
+          slidesContainer.addEventListener('dblclick', (e) => toggleDoubleClickZoom(e.clientX, e.clientY));
+          slidesContainer.addEventListener('touchend', (e) => {
+            const now = Date.now(); const gap = now - lastTapTime; lastTapTime = now;
+            if (gap < 300 && gap > 0) { const t = e.changedTouches[0]; toggleDoubleClickZoom(t.clientX, t.clientY); }
+          });
+        }
+        function detachImageEventListeners() {
+          slidesContainer.removeEventListener('pointerdown', onPointerDown);
+          slidesContainer.removeEventListener('pointermove', onPointerMove);
+          window.removeEventListener('pointerup', onPointerUp);
+          // dblclick/touchend removal not strictly necessary here
+        }
+
+        function onPointerDown(e) {
+          const media = getActiveMedia(); if (!media || media.tagName !== 'IMG') return;
+          if (zoomScale <= 1) return;
+          isDragging = true; activeImgPointerDown = true;
+          dragStartX = e.clientX - imgOffsetX; dragStartY = e.clientY - imgOffsetY;
+          try { e.target.setPointerCapture && e.target.setPointerCapture(e.pointerId); } catch (_) { }
+          media.style.cursor = 'grabbing';
+        }
+        function onPointerMove(e) { if (!isDragging) return; imgOffsetX = e.clientX - dragStartX; imgOffsetY = e.clientY - dragStartY; applyTransformToActive(); }
+        function onPointerUp(e) {
+          if (!activeImgPointerDown) return;
+          isDragging = false; activeImgPointerDown = false;
+          const media = getActiveMedia();
+          if (media && media.tagName === 'IMG') media.style.cursor = 'grab';
+          clampImageOffset();
+        }
+        function clampImageOffset() {
+          const img = getActiveMedia(); if (!img || img.tagName !== 'IMG') return;
+          const rect = img.getBoundingClientRect(); const vw = window.innerWidth; const vh = window.innerHeight;
+          const scaledWidth = rect.width; const scaledHeight = rect.height;
+          const maxX = Math.max(0, (scaledWidth - vw) / 2 + 50); const maxY = Math.max(0, (scaledHeight - vh) / 2 + 50);
+          imgOffsetX = Math.max(-maxX, Math.min(maxX, imgOffsetX));
+          imgOffsetY = Math.max(-maxY, Math.min(maxY, imgOffsetY));
+          applyTransformToActive();
+        }
+        function toggleDoubleClickZoom(clientX, clientY) {
+          const media = getActiveMedia(); if (!media || media.tagName !== 'IMG') return;
+          const rect = media.getBoundingClientRect();
+          const clickX = clientX - rect.left; const clickY = clientY - rect.top;
+          if (zoomScale === 1) {
+            zoomScale = Math.min(2, ZOOM_MAX);
+            const dx = (rect.width / 2 - clickX) * (zoomScale - 1);
+            const dy = (rect.height / 2 - clickY) * (zoomScale - 1);
+            imgOffsetX += dx; imgOffsetY += dy;
+          } else { zoomScale = 1; imgOffsetX = 0; imgOffsetY = 0; }
+          applyTransformToActive(); clampImageOffset();
+        }
+
+        // initialize only if thumbnails exist or initialSlides provided
+        if (images.length) {
+          buildSlides();
+        }
+
+        // return controller (for debug or further extension)
+        return {
+          open: openPopup,
+          close: closePopup,
+          show: showSlide,
+          startAutoplay, stopAutoplay, toggleAutoplay
+        };
+      }
+
+      // Create controllers:
+      // Photos thumbnails: use selector '.thumb' (your photo thumbs)
+      const photoCtrl = createGalleryController({ thumbSelector: '.thumb', modalIdPrefix: 'photo' });
+
+      // Video thumbs: I will re-use the grid thumbnails in #video section. You currently have images there.
+      // Ensure your video thumbnails have class 'video-thumb' and `data-src` attribute pointing to actual video file or image.
+      // If you only have images there, the gallery will treat them as images.
+      const videoCtrl = createGalleryController({ thumbSelector: '.video-thumb', modalIdPrefix: 'video' });
+
+      // Floorplan thumbs: if you want to use the same images, set selector '.gallery-img' or create a dedicated class 'floor-thumb'
+      const floorCtrl = createGalleryController({ thumbSelector: '.gallery-img', modalIdPrefix: 'floor' });
+
+      // If you want to programmatically open (example):
+      // photoCtrl && photoCtrl.open(0);
+
+    })();
 
 
-      // footer
-      document.getElementById('year').textContent = new Date().getFullYear();
-
-    </script>
+  </script>
 </body>
 
 </html>
